@@ -42,5 +42,5 @@ class Square:
                 for column in range(self.__size):
                     print("#", end="")
                 print()
-        else:
+        els:
             print()
