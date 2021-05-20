@@ -6,4 +6,4 @@ def safe_print_integer_err(value):
         return True
     except Exception as e:
         print("Exception:", e, file=sys.stderr)
-        return Fals
+        return False
