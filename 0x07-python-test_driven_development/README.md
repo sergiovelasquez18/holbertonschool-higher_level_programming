@@ -22,7 +22,7 @@ What you shoud learn from this project:
 
 
 ### [2. Say my name](./3-say_my_name.py)
-* Write a function that prints My name is <first name> <last name>
+* Write a function that prints My name is < first name > < last name >
 
 
 ### [3. Print square](./4-print_square.py)
