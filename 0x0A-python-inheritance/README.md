@@ -25,7 +25,7 @@
 ### [2. Exact same object](./2-is_same_class.py)
 * A function that gives you the index of a key.
 
-### [3. Same class or inherit from] = 'holberton'](./3-is_kind_of_class.py)
+### [3. Same class or inherit from](./3-is_kind_of_class.py)
 * Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
 
 ### [4. Only sub class of](./4-inherits_from.py)
