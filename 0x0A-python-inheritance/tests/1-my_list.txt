@@ -1,34 +1,34 @@
-The 1-my_list module
+The ``1-my_list`` module
 ======================
 
-Using MyList
+Using ``MyList``
 -------------------
 
 Importing the function from the module:
-MyList = import("1-my_list").MyList
+        >>> MyList = __import__("1-my_list").MyList
 
 Checking fot a string:
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(-1)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append(-5)
-    >>> print(my_list)
-    [1, -1, 2, 3, -5]
-    >>> my_list.print_sorted()
-    [-5, -1, 1, 2, 3]
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(-1)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(-5)
+	>>> print(my_list)
+	[1, -1, 2, 3, -5]
+	>>> my_list.print_sorted()
+	[-5, -1, 1, 2, 3]
 
 Checking for all negative numbers:
-     >>> l = MyList()
-     >>> l.append(-10)
-     >>> l.append(-1)
-     >>> l.append(-7)
-     >>> l.append(-2)
-     >>> l.append(-8)
-     >>> print(l)
-     [-10, -1, -7, -2, -8]
-     >>> l.print_sorted()
-     [-10, -8, -7, -2, -1]
-     >>> print(l)
+	 >>> l = MyList()
+	 >>> l.append(-10)
+	 >>> l.append(-1)
+	 >>> l.append(-7)
+	 >>> l.append(-2)
+	 >>> l.append(-8)
+	 >>> print(l)
+	 [-10, -1, -7, -2, -8]
+	 >>> l.print_sorted()
+	 [-10, -8, -7, -2, -1]
+	 >>> print(l)
          [-10, -1, -7, -2, -8]
