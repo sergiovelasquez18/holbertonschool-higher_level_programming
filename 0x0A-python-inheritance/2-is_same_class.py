@@ -3,8 +3,9 @@
 
 
 def is_same_class(obj, a_class):
-	"""returns True or False based on inheritance"""
-	if type(obj) == a_class:
-		return True
-	else:
-		return False
+    """returns True or False based on inheritance"""
+    if type(obj) == a_class:
+        return True
+    else:
+        return False
+
