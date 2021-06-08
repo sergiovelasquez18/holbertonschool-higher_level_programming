@@ -2,7 +2,7 @@
 """the module creates the class that inherits from Base"""
 
 
-from models.base import Base # type: ignore
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -36,6 +36,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """setter for heigth"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -49,6 +50,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """setter of x"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -62,6 +64,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """setter of y"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -87,8 +90,7 @@ class Rectangle(Base):
     def __str__(self):
         """Return the informal representation of the object"""
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
-        self.id, self.__x, self.__y, self.__width, self.__height)
-
+            self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args):
         """Updates atributtes"""
