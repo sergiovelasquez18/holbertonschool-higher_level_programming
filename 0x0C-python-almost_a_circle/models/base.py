@@ -2,10 +2,6 @@
 """This module creates the Base class"""
 
 
-import json
-import csv
-from os import path
-
 class Base:
     """Class name base
     Attributes:
