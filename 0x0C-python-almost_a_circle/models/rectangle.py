@@ -94,3 +94,6 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Updates atributtes"""
+        attrs = ["id", "width", "height", "x", "y"]
+        for post in range(len(args)):
+            setattr(self, attrs[post], args[post])
