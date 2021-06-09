@@ -14,6 +14,6 @@ class Square(Rectangle):
         self.size = size
 
     def __str__(self):
-    	"""Return the informal representation of Square class"""
-    	return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
-        self.id, self.x, self.y, self.size)
+        """Return the informal representation of Square class"""
+        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
+            self.id, self.x, self.y, self.size) l
