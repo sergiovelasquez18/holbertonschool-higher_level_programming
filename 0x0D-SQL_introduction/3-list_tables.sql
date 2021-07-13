@@ -1,2 +1,3 @@
 -- Project MySQL
--- l
+-- lists all the tables of a database
+SHOW TABLES;
