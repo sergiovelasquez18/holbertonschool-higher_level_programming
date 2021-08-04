@@ -1,10 +1,10 @@
 #!/usr/bin/node
 // script that computes and prints a factorial
-function factorialRe(n) {
-	if (!n){
-		return 1;
-	} else {
-    return n * factorialRe (n - 1);
+function factorialRe (n) {
+  if (!n) {
+    return 1;
+  } else {
+    return n * factorialRe(n - 1);
   }
 }
 
