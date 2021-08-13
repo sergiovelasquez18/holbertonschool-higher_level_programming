@@ -10,15 +10,15 @@ if __name__ == "__main__":
                               port=3306,
                               user=argv[1],
                               passwd=argv[2],
-                              db=argv[3])
+                              db=argv[3],
+                              charset="utf8")
     current = connect.cursor()
-    current.execute("""SELECT cities.name FROM cities, states WHERE
-    cities.state_id = states.id AND states.name = %s""", (argv[4]))
-
+    current.execute("SELECT cities.name FROM cities \
+                    RIGHT JOIN states ON states.id = cities.state_id \
+                    WHERE states.name = %s \
+                    ORDER BY cities.id ACS", (argv[4], ))
     query_r = current.fetchall()
     new_list = []
     for row in query_r:
         new_list.append(row[0])
-    print(', '.join(city[0] for city in query_r))
-    current.close()
-    connect.close()
+    print(", ".join(new_list))
