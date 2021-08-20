@@ -3,4 +3,4 @@
 
 
 def find_peak(list_of_integers):
-	"""Return the peak"""
+    """Return the peak"""
