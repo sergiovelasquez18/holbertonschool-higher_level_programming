@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Write a Python script that fetches https://intranet.hbtn.io/status"""
-import urllib.request
+import requests
 from sys import argv
 
 if __name__ == "__main__":
