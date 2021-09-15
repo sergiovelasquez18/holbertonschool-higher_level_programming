@@ -9,7 +9,7 @@ request.get(process.argv[2], function (error, response, body) {
   }
   fs.writeFile(process.argv[3], body, (error) => {
     if (error) {
-    console.log('code:', response && response.statusCode);
+      console.log('code:', response && response.statusCode);
     }
   });
 });
