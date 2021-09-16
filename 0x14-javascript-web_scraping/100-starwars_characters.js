@@ -10,7 +10,7 @@ request(url, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-	  movieDict = JSON.parse(body);
+    movieDict = JSON.parse(body);
     for (i = 0; i < movieDict.characters.length; i++) {
       request(movieDict.characters[i], function (error, request, body) {
         if (error) {
